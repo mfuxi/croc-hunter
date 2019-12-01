@@ -43,7 +43,7 @@ spec:
     spec:
       {{- if .Values.imagePullSecrets }}
       imagePullSecrets:
-        - name: {{ .Values.imagePullSecrets.name }}
+      - name: {{ .Values.imagePullSecrets.name }}
       {{- end }}
       containers:
         - name: {{ template "fullname" . }}

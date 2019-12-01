@@ -1,13 +1,13 @@
 FROM golang:1.8-alpine3.6
 
-LABEL maintainer="jessde@microsoft.com"
+LABEL maintainer="moty.fux@gmail.com"
 
 ARG VCS_REF
 ARG BUILD_DATE
 
 # Metadata
 LABEL org.label-schema.vcs-ref=$VCS_REF \
-      org.label-schema.vcs-url="https://github.com/jldeen/croc-hunter" \
+      org.label-schema.vcs-url="https://github.com/mfuxi/croc-hunter" \
       org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.docker.dockerfile="/Dockerfile"
 

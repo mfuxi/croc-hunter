@@ -8,12 +8,12 @@ servicePort: 80
 containerPort: 8080
 component: "croc-hunter"
 replicas: 3
-image: acrjdtest.azurecr.io/acrjdtest/crochunter
+image: r.cfcr.io/mfuxi/mfuxi/croc-hunter
 imageTag: master
 imagePullPolicy: Always
 ## If you have a private registry you specify a secret to use --- add note about how secrets work with jenkinsfile set// 
 imagePullSecrets: 
-  name: croc-hunter-secrets
+  name: cfcr
 cpu: "10m"
 memory: "128Mi"
 ## Ingress settings
